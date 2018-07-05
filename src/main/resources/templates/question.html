@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>24种人格力量测试</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>
+    <span id="id" th:text="${questionEntity.id}"/>. <span th:text="${questionEntity.content}"/>
+</h1>
+<input type="radio" id="veryLike" value="5" />
+<label for="veryLike">非常似我</label>
+<br/>
+<input type="radio" id="someLike" value="4" />
+<label for="someLike">有点似我</label>
+<br/>
+<input type="radio" id="neutrality" value="3" />
+<label for="neutrality">中立（不置可否）</label>
+<br/>
+<input type="radio" id="someUnlike" value="2" />
+<label for="someUnlike">有点不似我</label>
+<br/>
+<input type="radio" id="veryUnlike" value="1" />
+<label for="veryUnlike">非常不似我</label>
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/question.js"></script>
+</html>

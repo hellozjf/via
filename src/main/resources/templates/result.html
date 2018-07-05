@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试结果</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>您的人格为：</h1>
+<table>
+    <tr th:each="result : ${results}">
+        <td th:text="${result.name}" style="font-weight: bold"></td>
+        <td th:text="${result.desc}"></td>
+    </tr>
+</table>
+</body>
+</html>
